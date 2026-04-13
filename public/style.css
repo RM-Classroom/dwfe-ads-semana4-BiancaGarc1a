@@ -6,14 +6,13 @@
 }
 
 body {
-  background-color: #888282;
+  background-color: #fcfbfb;
   padding: 20px;
 }
 
 /* CABEÇALHO */
 .cabecalho {
-  background-color: #cfcfcf;
-  border: 2px solid #333;
+  background-color: #e4bfde;
   padding: 15px;
 
   display: flex;
@@ -22,9 +21,8 @@ body {
 }
 
 .logo {
-  width: 100x;
-  height: 120px;
-  border: 2px solid #333;
+  width: 100px;
+  height: 100px;
   background-color: white;
 
   display: flex;
@@ -41,7 +39,7 @@ body {
 }
 
 .titulo-cabecalho {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bold;
 }
 
@@ -86,7 +84,6 @@ body {
   width: 100%;
 }
 
-/* MENSAGEM PRINCIPAL */
 .mensagem {
   margin-bottom: 30px;
   display: flex;
@@ -101,20 +98,18 @@ body {
   max-width: 100%;
   height: 700px;
 
-  background-color: #888282;
+  background-color: #e4bfde;
   border-radius: 20px;
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 50px;
 
   display: flex;
   justify-content: center;
   align-items: top;
 }
 
-
-/* IMAGENS GRANDES */
 .imagens-grandes {
   display: flex;
   flex-direction: row;
@@ -138,7 +133,6 @@ body {
   font-weight: bold;
 }
 
-/* TEMAS */
 .temas {
   display: flex;
   justify-content: center;
@@ -158,7 +152,6 @@ body {
 .img-pequena {
   width: 150px;
   height: 150px;
-  border: 2px solid #333;
   background-color: white;
 
   display: flex;
@@ -192,8 +185,7 @@ body {
 
 /* RODAPÉ */
 .rodape {
-  background-color: #cfcfcf;
-  border: 2px solid #333;
+  background-color: #e4bfde;
   padding: 20px;
   height: 140px;
   margin-top: 20px;
@@ -205,11 +197,10 @@ body {
 }
 
 .rodape-item {
-  flex: 1; /* cada um ocupa 1/3 */
+  flex: 1;
   font-weight: bold;
 }
 
-/* alinhamento individual */
 .rodape-item:nth-child(1) {
   text-align: left;
 }
@@ -276,4 +267,85 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  /* HEADER */
+  .cabecalho {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .titulo-cabecalho {
+    font-size: 32px;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-menu {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+  }
+
+  /* MENSAGEM */
+  .mensagem {
+    width: 100%;
+  }
+
+  .btn-mensagem {
+    height: auto;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* IMAGENS */
+  .imagens-grandes {
+    flex-direction: column;
+    margin: 0;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .img-grande {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-grande img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* TEMAS */
+  .temas {
+    gap: 30px;
+  }
+
+  .img-pequena {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* RODAPÉ */
+  .rodape {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .rodape-item {
+    text-align: center !important;
+  }
 }

@@ -11,7 +11,7 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 - Nome: Bianca Garcia
 - Matricula: 925565
 - Proposta de projeto escolhida:  Temas e Conteúdos Associados
-- Breve descrição sobre seu projeto: Site para conscientizar sobre o vício em jogos online e incentivar hábitos mais saudáveis.
+- Breve descrição sobre seu projeto: Este projeto consiste no desenvolvimento de um site voltado à promoção do bem-estar por meio da prática de yoga. A aplicação apresenta uma interface simples e organizada, com navegação intuitiva e conteúdos informativos.
 
 
 ## Print do(s) wireframe(s) criado
